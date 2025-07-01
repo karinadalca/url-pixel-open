@@ -1,0 +1,16 @@
+# Railway Deployment Configuration for URLPixel Open Source
+# One-click deployment: https://railway.app/template/urlpixel-open
+
+[build]
+  builder = "nixpacks"
+
+[deploy]
+  healthcheckPath = "/health"
+  healthcheckTimeout = 30
+  restartPolicyType = "on_failure"
+  restartPolicyMaxRetries = 3
+
+[env]
+  NODE_ENV = { default = "production" }
+  API_KEY = { default = "" }
+  PORT = { default = "3000" }
