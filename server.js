@@ -193,8 +193,15 @@ async function generateScreenshot(config) {
       '--disable-features=VizDisplayCompositor',
       '--disable-extensions',
       '--disable-plugins',
-      '--memory-pressure-off'
+      '--memory-pressure-off',
+      '--disable-web-security',
+      '--disable-features=site-per-process',
+      '--disable-hang-monitor',
+      '--disable-client-side-phishing-detection',
+      '--disable-prompt-on-repost',
+      '--max_old_space_size=4096'
     ],
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
     defaultViewport: null,
     timeout: 30000
   });

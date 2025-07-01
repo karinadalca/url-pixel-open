@@ -38,6 +38,8 @@ npm start
 # API available at http://localhost:3000
 ```
 
+**Need help?** Check our **[Complete Deployment Guide →](https://urlpixel.com/open-source/getting-started)**
+
 ---
 
 ## 📸 **Usage Examples**
@@ -71,6 +73,8 @@ curl -X POST http://localhost:3000/screenshot \
   -d '{"url": "https://stripe.com"}'
 ```
 
+**More examples?** See our **[Complete API Reference →](https://urlpixel.com/open-source/api-reference)**
+
 ---
 
 ## ✨ **What You Get**
@@ -93,6 +97,8 @@ curl -X POST http://localhost:3000/screenshot \
 - 🔍 **Health monitoring** endpoint for service status
 - 📖 **Built-in documentation** at API root endpoint
 - 🐳 **Docker ready** with multi-platform support
+
+**Technical details?** Read our **[Architecture Deep Dive →](https://urlpixel.com/open-source/architecture)**
 
 ---
 
@@ -125,14 +131,25 @@ For real applications, consider [URLPixel.com](https://urlpixel.com):
 
 **Pricing**: URLPixel.com is **50-70% cheaper** than competitors while offering more features!
 
+**Detailed comparison?** See our **[Open Source vs Managed Comparison →](https://urlpixel.com/open-source/comparison)**
+
 ---
 
-## 📚 **Documentation**
+## 📚 **Complete Documentation**
 
-- **[API Reference](docs/api.md)** - Complete endpoint documentation
-- **[Deployment Guide](docs/deployment.md)** - Railway, Docker, manual setup
-- **[Code Examples](docs/examples/)** - Multiple programming languages
-- **[Architecture](docs/architecture.md)** - How it works under the hood
+### **Quick Links**
+- **[📖 Getting Started Guide](https://urlpixel.com/open-source/getting-started)** - Step-by-step deployment for Railway, Docker, and manual
+- **[📡 API Reference](https://urlpixel.com/open-source/api-reference)** - Complete endpoint documentation with examples
+- **[⚙️ Production Deployment](https://urlpixel.com/open-source/deployment)** - Advanced setup, scaling, and security
+- **[🏗️ Architecture Guide](https://urlpixel.com/open-source/architecture)** - Technical deep dive and implementation details
+- **[🔄 Feature Comparison](https://urlpixel.com/open-source/comparison)** - When to self-host vs upgrade to URLPixel.com
+
+### **Local Documentation**
+- **[API Reference](docs/api.md)** - Basic endpoint documentation
+- **[Deployment Guide](docs/deployment.md)** - Simple setup instructions
+- **[Code Examples](docs/examples/)** - Language-specific examples
+
+> 💡 **Pro tip**: The [URLPixel.com documentation](https://urlpixel.com/open-source) is more comprehensive and always up-to-date!
 
 ---
 
@@ -162,29 +179,28 @@ services:
       - API_KEY=your-optional-key
 ```
 
+**Advanced configuration?** Check our **[Production Deployment Guide →](https://urlpixel.com/open-source/deployment)**
+
 ---
 
 ## 🤝 **Community & Support**
 
-- **[GitHub Discussions](https://github.com/karinadalca/url-pixel-open/discussions)** - Ask questions, share ideas
-- **[Discord Community](https://discord.gg/urlpixel)** - Join the URLPixel community
-- **[Issues](https://github.com/karinadalca/url-pixel-open/issues)** - Report bugs or request features
-- **[Contributing](CONTRIBUTING.md)** - Help improve the project
+### **Get Help Fast**
+1. **[📖 URLPixel.com Documentation](https://urlpixel.com/open-source)** - Comprehensive guides and tutorials
+2. **[🔍 GitHub Issues](https://github.com/karinadalca/url-pixel-open/issues)** - Search existing solutions
+3. **[💬 GitHub Discussions](https://github.com/karinadalca/url-pixel-open/discussions)** - Ask questions and share ideas
+4. **[🎮 Discord Community](https://discord.gg/urlpixel)** - Join the URLPixel community
 
-### **Getting Help**
-1. Check the [documentation](docs/) first
-2. Search [existing issues](https://github.com/karinadalca/url-pixel-open/issues)
-3. Ask in [GitHub Discussions](https://github.com/karinadalca/url-pixel-open/discussions)
-4. Join our [Discord](https://discord.gg/urlpixel) for community support
+### **Quick Troubleshooting**
+- **Deployment issues?** → [Getting Started Guide](https://urlpixel.com/open-source/getting-started)
+- **API not working?** → [API Reference](https://urlpixel.com/open-source/api-reference)  
+- **Performance problems?** → [Production Deployment](https://urlpixel.com/open-source/deployment)
+- **Need more features?** → [Feature Comparison](https://urlpixel.com/open-source/comparison)
 
----
-
-## 📄 **License & Credits**
-
-- **License**: MIT - Use freely for any purpose
-- **Technology**: Built with Express.js and Puppeteer
-- **Powered by**: URLPixel screenshot technology
-- **Managed Service**: [URLPixel.com](https://urlpixel.com) for production use
+### **Contributing**
+- **[Contributing Guidelines](CONTRIBUTING.md)** - Help improve the project
+- **[Changelog](CHANGELOG.md)** - See what's new
+- **[License](LICENSE)** - MIT License
 
 ---
 
@@ -203,6 +219,8 @@ HTTP Request → Express.js → Puppeteer → Chrome → Screenshot → Base64 �
 - Completely stateless service
 - Perfect for self-hosting
 
+**Want technical details?** Read our **[Architecture Deep Dive →](https://urlpixel.com/open-source/architecture)**
+
 ---
 
 ## 🌟 **Why Open Source?**
@@ -215,14 +233,27 @@ URLPixel believes in:
 
 For production workloads, the managed [URLPixel.com](https://urlpixel.com) service provides enterprise features, global performance, and professional support.
 
+**Compare options?** See our **[Open Source vs Managed Guide →](https://urlpixel.com/open-source/comparison)**
+
+---
+
+## 📄 **License & Credits**
+
+- **License**: MIT - Use freely for any purpose
+- **Technology**: Built with Express.js and Puppeteer
+- **Powered by**: URLPixel screenshot technology
+- **Managed Service**: [URLPixel.com](https://urlpixel.com) for production use
+
 ---
 
 **Ready to deploy?** Click the Railway button above or run `docker-compose up` to get started! 🚀
 
-**Questions?** Join our [Discord community](https://discord.gg/urlpixel) or check the [documentation](docs/).
+**Need help?** Check our **[Complete Documentation →](https://urlpixel.com/open-source)** or join our **[Discord Community →](https://discord.gg/urlpixel)**
 
 ---
 
-**Implementation Status**: Ready for Session 018 development  
-**Repository**: https://github.com/karinadalca/url-pixel-open  
-**Managed Service**: https://urlpixel.com
+**🔗 Quick Links:**
+- **[URLPixel.com](https://urlpixel.com)** - Managed screenshot API service
+- **[Complete Documentation](https://urlpixel.com/open-source)** - Comprehensive guides and tutorials  
+- **[GitHub Repository](https://github.com/karinadalca/url-pixel-open)** - Source code and issues
+- **[Discord Community](https://discord.gg/urlpixel)** - Get help and share ideas

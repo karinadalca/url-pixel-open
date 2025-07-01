@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-# Install Chrome dependencies
+# Install Chrome dependencies and curl for health checks
 RUN apk add --no-cache \
     chromium \
     nss \
@@ -8,7 +8,8 @@ RUN apk add --no-cache \
     freetype-dev \
     harfbuzz \
     ca-certificates \
-    ttf-freefont
+    ttf-freefont \
+    curl
 
 # Set Chrome path for Puppeteer
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
@@ -24,9 +25,9 @@ RUN npm ci --only=production
 COPY server.js ./
 COPY docs ./docs
 
-# Health check
+# Health check using curl
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3000/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"
+  CMD curl -f http://localhost:3000/health || exit 1
 
 EXPOSE 3000
 

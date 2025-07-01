@@ -14,3 +14,5 @@
   NODE_ENV = { default = "production" }
   API_KEY = { default = "" }
   PORT = { default = "3000" }
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = { default = "false" }
+  PUPPETEER_EXECUTABLE_PATH = { default = "" }

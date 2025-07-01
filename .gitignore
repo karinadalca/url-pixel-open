@@ -105,3 +105,10 @@ screenshot_response.json
 
 # Docker
 .dockerignore
+
+# Development and internal files (not for end users)
+CHANGELOG.md.template
+SESSION-*-SUMMARY.md
+DEPLOYMENT-VALIDATION.md
+tests/
+*.log
